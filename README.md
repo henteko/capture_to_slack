@@ -3,5 +3,5 @@
 スクリーンキャプチャを撮って指定のslackに投げてくれるやつです
 
 ```sh
-$ cas --token 'your slack token' --channel 'slack channel'
+$ ./cas your_slack_post_channel xxxx-xxxx-your-slack-api-token
 ```
