@@ -1,3 +1,6 @@
 #!/bin/sh
 
-screencapture 
+IMAGE_PATH="./captures/`date '+%F'`.png"
+screencapture $IMAGE_PATH
+curl -F file=@$IMAGE_PATH -F channels=$1 -F token=$2 https://slack.com/api/files.upload
+
